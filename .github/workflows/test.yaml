@@ -45,7 +45,7 @@ jobs:
           enable-cache: true
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --group=test
 
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
