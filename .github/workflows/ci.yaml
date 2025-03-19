@@ -100,7 +100,7 @@ jobs:
           python -Im coverage xml -i
 
       - name: Fix coverage file name
-        run: sed -i "s/home\/runner\/work\/litestar\/litestar/github\/workspace/g" coverage.xml
+        run: sed -i "s/home\/runner\/work\/niekkeijzer\/litestar-oidc/github\/workspace/g" coverage.xml
 
       #- name: Upload coverage reports to Codecov
       #  uses: codecov/codecov-action@v5

@@ -62,10 +62,9 @@ jobs:
         if: inputs.coverage
         run: mv .coverage .coverage.${{ inputs.python-version }}
 
-      # TODO: Configure codecov
-      #- uses: actions/upload-artifact@v4
-      #  if: inputs.coverage
-      #  with:
-      #    name: coverage-data-${{ inputs.python-version }}
-      #    path: .coverage.${{ inputs.python-version }}
-      #    include-hidden-files: true
+      - uses: actions/upload-artifact@v4
+        if: inputs.coverage
+        with:
+          name: coverage-data-${{ inputs.python-version }}
+          path: .coverage.${{ inputs.python-version }}
+          include-hidden-files: true
