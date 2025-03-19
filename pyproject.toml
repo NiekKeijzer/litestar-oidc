@@ -1,17 +1,42 @@
 [project]
 name = "litestar-oidc"
-version = "0.1.0"
+version = "v0.1.0-alpha.1"
 description = "OIDC authentication for Litestar"
 readme = "README.md"
 authors = [
     { name = "Niek Keijzer", email = "hello@niekkeijzer.com" }
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.8,<4.0"
 dependencies = [
     "httpx>=0.28.1",
     "litestar>=2.15.1",
     "pyjwt>=2.10.1",
 ]
+keywords = ["litestar", "oidc", "openid connect", "authentication", "authorization"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/NiekKeijzer/litestar-oidc"
+Repository = "https://github.com/litestar-org/litestar"
+Changelog = "https://github.com/NiekKeijzer/litestar-oidc/releases/"
+"Issue Tracker" = "https://github.com/NiekKeijzer/litestar-oidc/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"
 
 [build-system]
 requires = ["hatchling"]
